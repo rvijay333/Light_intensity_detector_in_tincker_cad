@@ -72,7 +72,7 @@ This project uses an LDR (photoresistor) to sense changes in ambient light. The 
 ### Running on Hardware
 
 1. Build the circuit as shown.
-2. Upload the code from this repo (`/code/LightIntensityDetector.ino`) to your Arduino using Arduino IDE.
+2. Upload the code from this repo , to your Arduino using Arduino IDE.
 3. Test the circuit by changing the light falling on the LDR.
 
 ---
