@@ -2,7 +2,7 @@
 
 An interactive project to detect ambient light using a photoresistor (LDR) and an Arduino Uno. The brighter the environment, the brighter the LED—perfect for learning about analog sensors and microcontroller basics!
 
----
+
 
 ![Project Demo](images/demo.gif) 
 
@@ -24,10 +24,6 @@ An interactive project to detect ambient light using a photoresistor (LDR) and a
     - [Requirements](#requirements)
     - [Running in Tinkercad](#running-in-tinkercad)
     - [Running on Hardware](#running-on-hardware)
-- [Example Code](#-example-code)
-- [Demo](#-demo)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
