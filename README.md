@@ -4,7 +4,7 @@ An interactive project to detect ambient light using a photoresistor (LDR) and a
 
 
 
-![Project Demo](images/demo.gif) 
+![Project Demo](https://github.com/rvijay333/Light_intensity_detector_in_tincker_cad/blob/main/simulation_photos/set_up_explanation.png) 
 
 ---
 
@@ -18,7 +18,7 @@ An interactive project to detect ambient light using a photoresistor (LDR) and a
 ## 🗂️ Table of Contents
 
 - [Project Overview](#-project-overview)
-- [Circuit Diagram](#-circuit-diagram)
+- [Circuit Diagram](https://github.com/rvijay333/Light_intensity_detector_in_tincker_cad/blob/main/simulation_photos/light_intensity_full.png)
 - [How It Works](#-how-it-works)
 - [Getting Started](#-getting-started)
     - [Requirements](#requirements)
@@ -35,7 +35,7 @@ This project uses an LDR (photoresistor) to sense changes in ambient light. The 
 
 ## 🖼️ Circuit Diagram
 
-![Circuit Diagram](images/circuit.png)  <!-- Replace with your own schematic image -->
+![Circuit Diagram](https://github.com/rvijay333/Light_intensity_detector_in_tincker_cad/blob/main/simulation_photos/light_intensity_full.png) 
 
 **Components:**
 - Arduino Uno
@@ -65,7 +65,7 @@ This project uses an LDR (photoresistor) to sense changes in ambient light. The 
 
 ### Running in Tinkercad
 
-1. Go to the [Tinkercad Project Link](https://www.tinkercad.com/...) <!-- Add your project link here -->
+1. Go to the [Tinkercad Project Link](https://www.tinkercad.com/things/kz2luIuCk7a-lightintensitymeasurement/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard) <!-- Add your project link here -->
 2. Start the simulation and interact with the photoresistor.
 3. Watch the LED brightness change as light intensity varies.
 
@@ -78,6 +78,22 @@ This project uses an LDR (photoresistor) to sense changes in ambient light. The 
 ---
 
 ## 💻 Example Code
+```
+int photo_sensor_value;
+void setup()
+{
+  pinMode(6,OUTPUT);
+  pinMode(A5,INPUT);
+  Serial.begin(9600);
+}
 
-> **File:** `LightIntensityDetector.ino`
+void loop()
+{
+  photo_sensor_value = analogRead(A5);
+  Serial.println(photo_sensor_value);
+  
+  analogWrite(6 , map(photo_sensor_value , 0,1023,0,255));
+  delay(100);
+}
+```
 
