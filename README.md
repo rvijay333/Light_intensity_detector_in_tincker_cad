@@ -12,7 +12,7 @@ An interactive project to detect ambient light using a photoresistor (LDR) and a
 
 - Real-time detection of light intensity with photoresistor
 - Smooth LED brightness control using analog output
-- Ready to simulate in [Tinkercad](https://www.tinkercad.com/)
+- Ready to simulate in Tinckercad.
 - Beginner-friendly code, well-commented
 
 ## 🗂️ Table of Contents
